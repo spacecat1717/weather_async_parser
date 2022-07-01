@@ -21,9 +21,6 @@ async def main(cities):
 
     results = await asyncio.gather(*tasks)
 
-    for result in results:
-        print(result)
+    return (f'{results[0]}\n{results[1]}')
+    
 
-cities = ['St. Petersburg', 'Moscow', 'Dublin']
-
-asyncio.run(main(cities))

@@ -17,15 +17,9 @@ async def main(num):
     
     task = asyncio.create_task(get_word(num))
     res = await task
-    print(res)
-
-def num_generator():
-    num = random.randint(0, 300) 
-    return num
+    return res
      
-print(time.strftime('%X'))    
+  
 
-asyncio.run(main(num_generator()))
 
-print(time.strftime('%X'))
 
