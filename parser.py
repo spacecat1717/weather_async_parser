@@ -14,6 +14,7 @@ async def get_weather(city):
             return f'{city}: {weather_json["main"]["temp"]}'
 
 async def main(cities):
+    """creates async tasks and shows result"""
     tasks = []
     for city in cities:
         tasks.append(asyncio.create_task(get_weather(city)))

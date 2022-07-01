@@ -1,0 +1,1 @@
+This is small app to parse weather in 3 cities. App has a widget maked on tkinter (why not)
